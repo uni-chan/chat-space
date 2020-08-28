@@ -36,5 +36,5 @@
 |user_id|integer|null:false, foreign_key: true|
 |group_id|integer|null:false, foreign_key: true|
 ### Association
-- has_many :users, through: :users_groups
-- has_many :groups, through: :users_groups
+- has_many :user, through: :users_groups
+- has_many :group, through: :users_groups
