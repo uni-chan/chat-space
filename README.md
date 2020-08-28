@@ -3,20 +3,22 @@
 ## users table
 |Column|Type|Options|
 |------|----|-------|
-|name|string|null: false|
+|name|string|null: false, index: true, unique: true|
 |email|string|null: false, unique: true|
 |password|string|null: false|
 ### Association
-- has_many :groups, through:users_groups
+- has_many :groups, through: :users_groups
 - has_many :messages
+- has_many :users_groups
 
 ## groups table
 |Column|Type|Options|
 |------|----|-------|
-|name|string|null: false, unique: true|
+|name|string|null: false, index: true, unique: true|
 ### Association
-- has_many :users, through:users_groups
+- has_many :users, through: :users_groups
 - has_many :messages
+- has_many :users_groups
 
 ## users_groups
 |Column|Type|Options|
