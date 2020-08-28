@@ -14,7 +14,7 @@
 ## groups table
 |Column|Type|Options|
 |------|----|-------|
-|name|string|null: false, index: true, unique: true|
+|name|string|null: false|
 ### Association
 - has_many :users, through: :users_groups
 - has_many :messages
