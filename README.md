@@ -15,7 +15,7 @@
 |------|----|-------|
 |name|string|null: false, unique: true|
 ### Association
-- has_many  :users, through:users_groups
+- has_many :users, through:users_groups
 - has_many :messages
 
 ## users_groups
