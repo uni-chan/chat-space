@@ -1,0 +1,52 @@
+.side-bar {
+  width:300px;
+  color:white;
+  background-color: #253141;
+
+  .side-bar__user-name {
+    height:100px;
+    list-style: none;
+    display:flex;
+    align-items:center;
+    font-weight: bold;
+    
+    .top-items{
+      width:300px;
+      display:flex;
+      justify-content:space-between;
+      color:white;
+      }
+
+      .top-items__name{
+        padding: 0px 20px;
+      }
+
+      .top-items__icons{
+        width:60px;
+        margin-left: 5px;
+
+        a {
+          text-decoration:none;
+          color:white;
+        }
+      }
+    } 
+  }     
+  .side-bar__group-list{
+    height:calc(100vh - 100px);
+    background-color:#2f3e51;
+    padding:20px;
+
+    .new-messages{
+      height:75px;
+
+      .group-name{
+        font-size: 15px;
+      }
+
+      .message-title{
+        margin-top: 5px;
+        font-size: 11px;
+      }
+    }
+  } 
