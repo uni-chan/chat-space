@@ -1,3 +1,8 @@
+@mixin font-size ($color,$size){
+  color:$color;
+  font-size:$size;
+}
+
 .chat-main{
   width: calc(100vw - 300px);
   display:flex;
@@ -15,13 +20,11 @@
       margin:35px 0px 15px 0px;
 
         .group-name{
-          color:#333333;
-          font-size:20px;
+          @include font-size(#333333,20px)
         }
         .members-name{
-          font-size:12px;
-          color: #999999;
-          margin-top:15px
+          @include font-size(#999999,12px);
+          margin-top:15px;
         }
       }  
 
@@ -30,15 +33,14 @@
       }  
 
       .edit-btn{
+        @include font-size(#38aef0,16px);
         display: flex;
         justify-content:center;
         align-items: center;
         width:72px;
         height:40px;
-        color:#38aef0;
-        font-size: 16px;
         margin:28px 0px;
-        border:1px solid       
+        border:1px solid;       
       }
     }
   }
@@ -54,23 +56,20 @@
         display: flex;
 
         .posted-user-name{
+          @include font-size(#333333,16px);
           align-items: center;
-          color: #333333;
-          font-size: 16px;
           font-weight: bold;
           margin-right: 10px;
           margin-bottom: 12px;
         }
 
         .posted-date-time{
-          font-size: 12px;
-          color:#999999
+          @include font-size(#999999,12px)
         } 
       }
 
       .posted-message{
-        color:#434A54;
-        font-size: 14px;
+        @include font-size(#433a54,14px)
       }  
     }
   }  
@@ -94,8 +93,8 @@
       .message-input{
         margin:10px;
         border:none;
-        width:80%;
-        padding:0px 45px 0px 15px;
+        width:100%;
+        padding:0px 15px 0px 15px;
       }
 
       .image-input{
