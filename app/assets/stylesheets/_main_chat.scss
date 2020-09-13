@@ -90,7 +90,6 @@
       margin:0 auto;
       background-color: white;
       width:100%;
-      margin-right:15px;
       
       .message-input{
         margin:10px;
@@ -100,21 +99,24 @@
       }
 
       .image-input{
-        margin:10px;
+        padding:10px;
+      }  
 
       .temp{
         display:none;
       }  
     }
-  }
-    .submit-btn{
-      background-color:#38aef0;
-      color:white;
-      padding:10px 30px;
+    .submit{
       margin-left:15px;
-      border:none;
-      width:110px;
-      }
-}
+
+      .submit-btn{
+        background-color:#38aef0;
+        color:white;
+        padding:10px 30px;
+        border:none;
+        width:110px;
+      }  
+    }
+  }
 
  
