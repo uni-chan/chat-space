@@ -3,25 +3,25 @@
   color:white;
   background-color: #253141;
 
-  .side-bar__user-name {
+  &__user-name{
     height:100px;
     list-style: none;
     display:flex;
     align-items:center;
     font-weight: bold;
     
-    .top-items{
+    &__top-items{
       width:300px;
       display:flex;
       justify-content:space-between;
       color:white;
       }
 
-      .top-items__name{
+      .side-bar__user-name__top-items__name{
         padding: 0px 20px;
       }
 
-      .top-items__icons{
+      .side-bar__user-name__top-items__icons{
         width:60px;
         margin-left: 5px;
 
@@ -37,7 +37,7 @@
     background-color:#2f3e51;
     padding:20px;
 
-    .new-messages{
+    &__new-messages{
       height:75px;
 
       .group-name{
