@@ -1,0 +1,121 @@
+@mixin font-size ($color,$size){
+  color:$color;
+  font-size:$size;
+}
+
+.chat-main{
+  width: calc(100vw - 300px);
+  display:flex;
+  flex-direction: column;
+
+  &__group-info{
+    background-color:white;
+    color: black;
+    height:100px;
+    display:flex;
+    justify-content: space-between;
+    padding:0px 40px;
+
+      &__name-lists{
+      margin:35px 0px 15px 0px;
+
+        &__group-name{
+          @include font-size(#333333,20px)
+        }
+        &__members-name{
+          @include font-size(#999999,12px);
+          margin-top:15px;
+        }
+      }  
+
+      a{
+        text-decoration:none;  
+      }  
+
+      .edit-btn{
+        @include font-size(#38aef0,16px);
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        width:72px;
+        height:40px;
+        margin:28px 0px;
+        border:1px solid;       
+      }
+    }
+  }
+  .chat-main__messages{
+    padding:35px 0px 0px 40px;
+    background-color:#fafafa;
+    height:calc(100vh - 190px);
+
+    &__message-list{
+      margin-bottom: 46px;
+
+      &__posted-info{
+        display: flex;
+
+        &__posted-user-name{
+          @include font-size(#333333,16px);
+          align-items: center;
+          font-weight: bold;
+          margin-right: 10px;
+          margin-bottom: 12px;
+        }
+
+        &__date-time{
+          @include font-size(#999999,12px)
+        } 
+      }
+
+      .posted-message{
+        @include font-size(#433a54,14px)
+      }  
+    }
+  }  
+  .chat-main__message-post{
+    background-color:#DDDDDD;
+    height:90px;  
+    padding:0px 50px 0px 40px;
+    display:flex;      
+    align-items:center;
+    justify-content:space-between;
+    position: relative;
+
+    &__form{
+      display:flex;
+      align-items: center;
+      justify-content: space-between;
+      margin:0 auto;
+      background-color: white;
+      width:100%;
+      
+      &__input{
+        margin:10px;
+        border:none;
+        width:100%;
+        padding:0px 15px 0px 15px;
+      }
+
+      &__image{
+        padding:10px;
+      }  
+
+        .temp{
+        display:none;
+        }  
+    }
+    .chat-main__message-post__submit{
+      margin-left: 15px;
+
+      &__btn{
+        background-color:#38aef0;
+        color:white;
+        padding:10px 30px;
+        border:none;
+        width:110px;
+      }  
+    }
+  }
+
+ 

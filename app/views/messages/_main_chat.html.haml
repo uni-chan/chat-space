@@ -1,0 +1,40 @@
+.chat-main
+  .chat-main__group-info
+    %ul.chat-main__group-info__name-lists
+      %li.chat-main__group-info__name-lists__group-name
+        test
+      %li.chat-main__group-info__name-lists__members-name
+        member: hisako2
+    = link_to "#" do
+      .edit-btn
+        Edit
+
+  .chat-main__messages
+    .chat-main__messages__message-list
+      .chat-main__messages__message-list__posted-info
+        .chat-main__messages__message-list__posted-info__user-name
+          user01
+        .chat-main__messages__message-list__posted-info__date-time
+          2020年9月9日 23時24分
+      .posted-message
+        sample message
+
+    .chat-main__messages__message-list
+      .chat-main__messages__message-list__posted-info
+        .chat-main__messages__message-list__posted-info__user-name
+          user01
+        .chat-main__messages__message-list__posted-info__date-time
+          2020年9月9日 23時24分
+      .posted-message
+        sample message
+
+  .chat-main__message-post
+    .chat-main__message-post__form
+      %input.textarea.chat-main__message-post__form__input{"placeholder":"type a message"}
+      %label.textarea.chat-main__message-post__form__image
+        =icon("far", "image")
+        %input{type:"file",class:"temp"}    
+
+    .chat-main__message-post__submit
+      %input.submit.chat-main__message-post__submit__btn{"value":"SEND"}
+    

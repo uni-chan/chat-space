@@ -1,0 +1,21 @@
+.side-bar 
+  .side-bar__user-name 
+    %ul.side-bar__user-name__top-items
+      %li.side-bar__user-name__top-items__name
+        Hisako
+      %li.side-bar__user-name__top-items__icons
+        = link_to "#" do
+          = icon("far", "edit")
+        = link_to "#" do
+          = icon("fas", "cog")
+  .side-bar__group-list
+    %ul.side-bar__group-list__new-messages
+      %li.group-name
+        group1
+      %li.message-title
+        message1
+    %ul.side-bar__group-list__new-messages
+      %li.group-name
+        group2
+      %li.message-title
+        message2
