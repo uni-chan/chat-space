@@ -11,8 +11,8 @@
   .side-bar__group-list
     - current_user.groups.each do |group|
       %ul.side-bar__group-list__new-messages
-        = link_to '#' do
+        = link_to group_messages_path(group) do
           %li.group-name
             = group.name
           %li.message-title
-            m1
+            = group.show_last_message
